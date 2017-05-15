@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "date-now": "^0.10.2"
+    "node-rdkafka": "^0.10.2"
   }
 }
