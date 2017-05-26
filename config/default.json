@@ -1,0 +1,17 @@
+{
+	"consumer": {
+		"settings": {
+			// 'debug': 'all',
+			"metadata.broker.list": "localhost:9092",
+			"group.id": "node-rdkafka-consumer-flow-example",
+			"enable.auto.commit": false
+		}
+	},
+	"producer": {
+		"settings": {
+			// 'debug' : 'all',
+			"metadata.broker.list": "localhost:9092",
+			"dr_cb": true //delivery report callback
+		}
+	}
+}

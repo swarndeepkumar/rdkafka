@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for producer.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">__root__/</a> producer.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">55% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>22/40</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">44.44% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">55% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>22/40</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+var config = require('config');
+var kafka = require('node-rdkafka');
+var authorize = require("./authorize.js");
+&nbsp;
+var produceMessage = {
+	sendMessage: function(ID, name, msg) {
+		produceMessage.authorization(ID, name, msg);
+	},
+	authorization: function(ID, name, msg) {
+		authorize.authorize(ID, name, function(response) {
+			//console.log(response.message);
+			var message = JSON.parse(msg);
+			var topicName = [],
+				permission;
+			var producer = new kafka.Producer(config.producer.settings);
+			//starting the producer
+&nbsp;
+			<span class="missing-if-branch" title="else path not taken" >E</span>if (response.message.length &gt; 1) {
+				for (var i = 0; i &lt; response.message.length; i++) {
+					// Publish - 0 (OR) Publish / Consume the message = 2
+					<span class="missing-if-branch" title="else path not taken" >E</span>if (response.message[i].Permission == 0 || response.message[i].Permission == 2) {
+						topicName.push({
+							topic: response.message[i].TopicName,
+							messages: message.message
+						});
+					}
+				}
+			} else {
+				// Publish - 0 (OR) Publish / Consume the message = 2
+<span class="cstat-no" title="statement not covered" >				if (response.message[0].Permission == 0 || response.message[0].Permission == 2) {</span>
+<span class="cstat-no" title="statement not covered" >					topicName.push({</span>
+						topic: response.message[0].TopicName,
+						messages: message.message
+					});
+				}
+			}
+			//logging debug messages, if debug is enabled
+			producer.on('event.log', function(log) {
+			  console.log(log);
+			});
+			
+			//logging all errors
+			producer.on('event.error', <span class="fstat-no" title="function not covered" >function(err) {</span>
+<span class="cstat-no" title="statement not covered" >				console.error('Error from producer');</span>
+<span class="cstat-no" title="statement not covered" >				console.error(err);</span>
+			});
+&nbsp;
+			//counter to stop this sample after maxMessages are sent
+			var counter = 0;
+			
+&nbsp;
+			producer.on('delivery-report', <span class="fstat-no" title="function not covered" >function(err, report) {</span>
+<span class="cstat-no" title="statement not covered" >				console.log('delivery-report: ' + JSON.stringify(report));</span>
+<span class="cstat-no" title="statement not covered" >				counter++;</span>
+			});
+&nbsp;
+			//Wait for the ready event before producing
+			producer.on('ready', <span class="fstat-no" title="function not covered" >function(arg) {</span>
+<span class="cstat-no" title="statement not covered" >				console.log('producer ready.' + JSON.stringify(arg));</span>
+&nbsp;
+				//Create a Topic object with any options our Producer
+				//should use when producing to that topic.
+&nbsp;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >				for (var i = 0; i &lt; topicName.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >					var topic = producer.Topic(topicName[i].topic, {</span>
+						// Make the Kafka broker acknowledge our message (optional)
+						'request.required.acks': 1
+					});
+<span class="cstat-no" title="statement not covered" >					var value = new Buffer(topicName[i].messages);</span>
+<span class="cstat-no" title="statement not covered" >					var key = "key-" + i;</span>
+					// if partition is set to -1, librdkafka will use the default partitioner
+<span class="cstat-no" title="statement not covered" >					var partition = -1;</span>
+<span class="cstat-no" title="statement not covered" >					producer.produce(topic, partition, value, key);</span>
+				}
+&nbsp;
+				//need to keep polling for a while to ensure the delivery reports are received
+<span class="cstat-no" title="statement not covered" >				var pollLoop = setInterval(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >					producer.poll();</span>
+<span class="cstat-no" title="statement not covered" >					if (counter === topicName.length) {</span>
+<span class="cstat-no" title="statement not covered" >						clearInterval(pollLoop);</span>
+						//producer.disconnect();
+					}
+				}, 1000);
+&nbsp;
+&nbsp;
+			});
+&nbsp;
+			producer.on('disconnected', <span class="fstat-no" title="function not covered" >function(arg) {</span>
+<span class="cstat-no" title="statement not covered" >				console.log('producer disconnected. ' + JSON.stringify(arg));</span>
+			});
+&nbsp;
+			//starting the producer
+			producer.connect();
+&nbsp;
+&nbsp;
+&nbsp;
+		});
+	}
+};
+&nbsp;
+exports.produceMessage = produceMessage;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri May 26 2017 16:55:07 GMT+0530 (IST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
