@@ -1,3 +1,4 @@
+'use strict';
 var producer = require("./producer.js");
 
 var ID = "payment";

@@ -1,3 +1,4 @@
+'use strict';
 var request = require('request');
 
 var authorize = function(ID, name, callback)  {
@@ -22,7 +23,7 @@ var authorize = function(ID, name, callback)  {
 		var res = {};
 		    res.statusCode = 200;
 		 var body = {
-		 	message : [{Permission:0,TopicName:'mytesttopic'},{Permission:2,TopicName:'mytesttopic1'}]
+		 	message : [{Permission:2,TopicName:'mytesttopic'},{Permission:0,TopicName:'mytesttopic1'}]
 		 };
 		
 		//

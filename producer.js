@@ -1,5 +1,8 @@
+'use strict';
+var config = require('config');
 var kafka = require('node-rdkafka');
 var authorize = require("./authorize.js");
+
 var produceMessage = {
 	sendMessage: function(ID, name, msg) {
 		produceMessage.authorization(ID, name, msg);
@@ -10,11 +13,7 @@ var produceMessage = {
 			var message = JSON.parse(msg);
 			var topicName = [],
 				permission;
-			var producer = new kafka.Producer({
-				// 'debug' : 'all',
-				'metadata.broker.list': 'localhost:9092',
-				'dr_cb': true //delivery report callback
-			});
+			var producer = new kafka.Producer(config.producer.settings);
 			//starting the producer
 
 			if (response.message.length > 1) {

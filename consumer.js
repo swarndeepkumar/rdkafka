@@ -1,3 +1,5 @@
+'use strict';
+var config = require('config');
 var kafka = require('node-rdkafka');
 var authorize = require("./authorize.js");
 
@@ -8,12 +10,7 @@ var consumeMessage = {
 
 	authorization: function(ID, name) {
 		authorize.authorize(ID, name, function(response) {
-			var consumer = new kafka.KafkaConsumer({
-				// 'debug': 'all',
-				'metadata.broker.list': 'localhost:9092',
-				'group.id': 'node-rdkafka-consumer-flow-example',
-				'enable.auto.commit': false
-			});
+			var consumer = new kafka.KafkaConsumer(config.consumer.settings);
 			var topicName = [];
 			if (response.message.length > 1) {
 				for (var i = 0; i < response.message.length; i++) {

@@ -10,7 +10,18 @@
   "license": "ISC",
   "private": true,
   "dependencies": {
+    "config": "^1.26.1",
     "node-rdkafka": "^0.10.2",
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "should": "^11.2.1",
+    "sinon": "^2.3.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-env": "^0.4.4",
+    "grunt-istanbul": "^0.7.2",
+    "grunt-mocha-test": "^0.13.2",
+    "mocha": "^3.4.2"
   }
 }
