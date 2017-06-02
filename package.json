@@ -1,15 +1,14 @@
 {
-  "name": "kafka",
+  "name": "rd-kafka",
   "version": "1.0.0",
-  "description": "",
+  "description": "rd kafka messaging system",
   "main": "indexProducer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Swarndeep kumar",
   "license": "ISC",
-  "private": true,
-  "dependencies": {
+    "dependencies": {
     "config": "^1.26.1",
     "node-rdkafka": "^0.10.2",
     "request": "^2.81.0",
