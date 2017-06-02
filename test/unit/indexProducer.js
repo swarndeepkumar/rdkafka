@@ -45,7 +45,7 @@ describe('Test producer methods', function() {
 		});
 
 		//authorize.authorize();
-		producer.produceMessage.authorization(ID, name, message);
+		producer.produceMessage.authorization(ID, name, message, 'oder-service');
 
 	});
 
@@ -71,7 +71,7 @@ describe('Test producer methods', function() {
 		});
 
 		//authorize.authorize();
-		producer.produceMessage.authorization(ID, name, message);
+		producer.produceMessage.authorization(ID, name, message, 'oder-service');
 
 	});
 

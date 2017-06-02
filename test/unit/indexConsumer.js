@@ -45,7 +45,7 @@ describe('Test consumer methods', function() {
 		});
 
 		//authorize.authorize();
-		consumer.consumeMessage.authorization(ID, name, message);
+		consumer.consumeMessage.authorization(ID, name, message, 'oder-service');
 
 	});
 
@@ -71,7 +71,7 @@ describe('Test consumer methods', function() {
 		});
 
 		//authorize.authorize();
-		consumer.consumeMessage.authorization(ID, name, message);
+		consumer.consumeMessage.authorization(ID, name, message, 'oder-service');
 
 	});
 

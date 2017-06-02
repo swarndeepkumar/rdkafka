@@ -4,8 +4,8 @@ var kafka = require('node-rdkafka');
 var authorize = require("./authorize.js");
 
 var consumeMessage = {
-	getMessage: function(ID, name) {
-		consumeMessage.authorization(ID, name);
+	getMessage: function(ID, name, servicename) {
+		consumeMessage.authorization(ID, name, servicename);
 	},
 
 	authorization: function(ID, name) {

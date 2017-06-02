@@ -3,5 +3,5 @@ var consumer = require("./consumer.js");
 
 var ID = "payment";
 var name = "Payment Service";
-
-consumer.consumeMessage.getMessage(ID, name);
+var servicename = "oder-ser";
+consumer.consumeMessage.getMessage(ID, name, servicename);

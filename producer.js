@@ -4,10 +4,10 @@ var kafka = require('node-rdkafka');
 var authorize = require("./authorize.js");
 
 var produceMessage = {
-	sendMessage: function(ID, name, msg) {
-		produceMessage.authorization(ID, name, msg);
+	sendMessage: function(ID, name, msg, servicename) {
+		produceMessage.authorization(ID, name, msg, servicename);
 	},
-	authorization: function(ID, name, msg) {
+	authorization: function(ID, name, msg, servicename) {
 		authorize.authorize(ID, name, servicename, function(response) {
 			//console.log(response.message);
 			var message = JSON.parse(msg);
