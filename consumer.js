@@ -9,7 +9,7 @@ var consumeMessage = {
 	},
 
 	authorization: function(ID, name) {
-		authorize.authorize(ID, name, function(response) {
+		authorize.authorize(ID, name, servicename, function(response) {
 			var consumer = new kafka.KafkaConsumer(config.consumer.settings);
 			var topicName = [];
 			if (response.message.length > 1) {

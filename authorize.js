@@ -1,7 +1,7 @@
 'use strict';
 var request = require('request');
 
-var authorize = function(ID, name, callback)  {
+var authorize = function(ID, name, servicename, callback)  {
 	
 	var jsonData = {
 		"ID" : ID,
@@ -9,7 +9,7 @@ var authorize = function(ID, name, callback)  {
 	};
 
 	var options = {
-		url: 'http://localhost:8080/KafkaAdminAPI/authorize',
+		url: 'http://localhost:8080/KafkaAdminAPI/services/'+servicename,
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json'

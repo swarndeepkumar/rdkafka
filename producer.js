@@ -8,7 +8,7 @@ var produceMessage = {
 		produceMessage.authorization(ID, name, msg);
 	},
 	authorization: function(ID, name, msg) {
-		authorize.authorize(ID, name, function(response) {
+		authorize.authorize(ID, name, servicename, function(response) {
 			//console.log(response.message);
 			var message = JSON.parse(msg);
 			var topicName = [],
